@@ -1,0 +1,10 @@
+<h1>Результаты парсинга</h1>
+{% if results %}
+    <ul>
+    {% for result in results %}
+        <li><b>{{ result.name }}</b>: {{ result.price }} руб.</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Результаты не найдены.</p>
+{% endif %}

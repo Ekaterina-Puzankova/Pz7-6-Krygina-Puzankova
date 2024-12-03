@@ -1,0 +1,15 @@
+<h1>Регистрация</h1>
+<form method="POST" novalidate>
+    {{ form.hidden_tag() }}
+    {{ form.username.label }} {{ form.username }}<br>
+    {{ form.password.label }} {{ form.password }}<br>
+    {{ form.password_confirm.label }} {{ form.password_confirm }}<br>
+    {{ form.submit }}
+</form>
+
+<h1>Парсинг</h1>
+<form method="POST">
+    <label for="category">Категория:</label>
+    <input type="text" id="category" name="category" required><br>
+    <input type="submit" value="Парсить">
+</form>
